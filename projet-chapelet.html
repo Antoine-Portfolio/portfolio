@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Par projets - Antoine MONTALBETTI</title>
+  <!-- Polices -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9+Charted&family=Playwrite+DE+Grund&family=DM+Sans&family=Lato&display=swap" rel="stylesheet">
+  <style>
+    /* Style du header */
+   .header {
+  display: flex;
+  justify-content: space-between; /* Aligne les éléments aux extrémités */
+  align-items: center; /* Centre verticalement */
+  padding: 15px 20px;
+  background: white;
+  margin : 4px 8px;
+}
+
+.nav-links {
+  display: flex;
+  margin: -2px 0px 0px 0px;
+}
+
+
+    /* Conteneur principal pour le contenu (sauf le header) */
+    .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: 'Playwrite DE Grund', cursive;
+      color: #2b2e4d;
+
+    }
+
+    /* Contenu de la page */
+    body {
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style pour "Prénom NOM" */
+    .name-title {
+      font-family: 'DM Sans', sans-serif;
+      text-decoration: none;
+      color: inherit;
+    }
+    .name-title .prenom { color: #9b7ad1; font-size: 18px; }
+    .name-title .nom { color: #ef7cc1; font-size: 30px; }
+
+
+    /* Titre de la page */
+    .page-title {
+      display: inline-block;
+      background: #f07bbf;
+      border: 1px solid #ddd;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-size: 14px;
+      color: white;
+      line-height: 1.4;
+      padding: 15px;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    /* Catégories */
+    .category {
+      margin-bottom: 40px;
+    }
+    .category-title {
+      display: inline-block;
+      background: #fce94d;
+      border: 1px solid #ddd;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-size: 14px;
+      color: #2b2e4d;
+      line-height: 1.4;
+      padding: 15px;
+      text-transform: uppercase;
+      margin-bottom: -15px;
+    }
+
+    /* Liste des projets */
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .project-item {
+      border: 1px solid #eee;
+      border-radius: 4px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .project-item:hover {
+      transform: translateY(-5px);
+    }
+    .project-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .project-item .project-info {
+      padding: 15px;
+      background: white;
+    }
+    .project-item h3 {
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      color: #2b2e4d;
+      margin: 0 0 10px 0;
+      text-transform: uppercase;
+    }
+    .project-item a {
+      color: #78bdc2;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: 'Playwrite DE Grund', cursive;
+    }
+    .project-item a:hover {
+      text-decoration: underline;
+    }
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .project-gallery img {
+      width: 100%;
+      border-radius: 4px;
+
+
+    /* Lien de retour */
+    .back-link {
+      display: inline-block;
+      margin: 40px 0;
+      color: #78bdc2;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Header en dehors du conteneur -->
+  <header class="header">
+    <a href="index.html" class="name-title">
+      <span class="prenom">Antoine</span> <span class="nom">MONTALBETTI</span>
+    </a>
+    <nav class="nav-links">
+      <a href="sommaire.html">Projets détaillés</a>
+      <a href="info.html">Info</a>
+    </nav>
+
+  </header>
+
+  <!-- Menu de filtres -->
+<div class="filter-menu2">
+  <button class="filter-button2" data-filter=".home"><a href="sommaire.html">Projets détaillés</a></button>
+</div>
+
+
+  <!-- Conteneur pour le reste du contenu -->
+  <div class="main-container">
+
+    <div class="category">
+    <h2 class="category-title">Illustration - Chapelet</h2>
+</div>
+
+  <!-- Galerie d'images -->
+  <div class="project-gallery">
+    <img src="images/chapelet/lapoussiniere.hotglue 2.jpg" alt="Présentation 0a">
+    <img src="images/chapelet/lapoussiniere.hotglue 3.jpg" alt="Présentation 0b">
+    <img src="images/chapelet/lapoussiniere.hotglue.jpg" alt="Présentation 1">
+    <img src="images/chapelet/lapoussiniere.hotglue2.png" alt="Présentation 2" class="full-width"> <!-- 4e image en pleine largeur -->
+    <img src="images/chapelet/illus01-AUSTREBERTHE copie.jpg" alt="Présentation 4">
+    <img src="images/chapelet/illus04-MARGUERITE copie.jpg" alt="Présentation 7">
+
+    <img src="images/chapelet/illus06-AGNES copie.jpg" alt="Présentation 5">
+
+    <img src="images/chapelet/illus05-ADELAIDE copie.jpg" alt="Présentation 3">
+    <img src="images/chapelet/illus02-BARBE copie.jpg" alt="Présentation 6">
+    <img src="images/chapelet/illus09-ARCHANGELA copie.jpg" alt="Présentation 8">
+  </div>
+
+
+
+  <!-- Description -->
+
+  <p>
+    Triple leporello collectif - 30 pages<br />
+    Réalisé avec Albianyears et Bétadine Bergère et imprimé à <a href="https://lapoussiniere.hotglue.me/" style = "color : #78bdc2">la Poussinière</a> en 2025.<br />
+    "C'est un petit format qui peut se feuilleter ou se déplier (2,50 mètres de contemplation).<br />
+    Les illustrations se succèdent comme des visions furtives. Des iconographies revisitées côtoient l'étrangeté d'un couvent décati dans une histoire qui sans fin s'égraine...<br />
+    Le projet est parti de l'idée de répétition, de prière, de série. À travers ces illustrations énigmatiques se dessine une ambiance faite de secrets d'alcôves et de vies oubliées."
+  </p>
+
+</p>
+
+
+
+  <!-- Lien de retour -->
+  <br />
+  <br />
+  <a href="sommaire.html" style = "color : #78bdc2">← Retour aux projets</a><br />
+  <a href="index.html" style = "color : #78bdc2">← Retour à la galerie</a>
+
+  </div>
+</body>
+
+</html>

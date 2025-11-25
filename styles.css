@@ -1,0 +1,329 @@
+/* Style du conteneur de la grille (Isotope gère la disposition) */
+.grid {
+  padding: 20px;
+  visibility: hidden; /* Cache la grille jusqu'à ce qu'Isotope soit prêt */
+}
+
+
+
+/* Style des boutons de filtres */
+.filter-button {
+  margin: 0px;
+width : 100%;
+  padding: 8px 16px;
+  background: #fce94d; /* Fond jaune par défaut */
+  border: none;
+  border-right: solid ;
+  cursor: pointer;
+  font-family: 'Lato', cursive; /* choix de la police */
+  font-size: 14px; /* Taille de la police */
+font-style : italic;
+text-transform: uppercase;
+  color: #2b2e4d; /* Couleur du texte */
+  border-radius: 0px; /* Coins s'arrondissent si on augmente radius */
+  transition: background 0.3s;  /* Animation douce au survol */
+}
+@media (max-width: 576px) {
+  .filter-button {
+      margin: 0px;
+width : 100%;
+  padding: 8px 16px;
+  background: #fce94d; /* Fond jaune par défaut */
+  border: none;
+  border-right: solid ;
+  cursor: pointer;
+  font-family: 'Lato', cursive; /* choix de la police */
+  font-size: 14px; /* Taille de la police */
+font-style : italic;
+text-transform: uppercase;
+  color: #2b2e4d; /* Couleur du texte */
+  border-radius: 0px; /* Coins s'arrondissent si on augmente radius */
+  transition: background 0.3s;  /* Animation douce au survol */
+
+    border-bottom: solid;
+  }}
+
+  
+
+
+.filter-button:hover {
+  background: #f0e09d; /* Jaune légèrement plus foncé au survol */
+}
+.filter-button2 {
+  margin: 0px;
+width : 100%;
+  padding: 8px 16px;
+  background: #f07bbf; /* Fond rose par défaut */
+  border: none;
+  border-right: none ;
+
+  cursor: pointer;
+  font-family: 'Lato', cursive; /* choix de la police */
+  font-size: 14px; /* Taille de la police */
+font-style : italic;
+text-transform: uppercase;
+  color: white; /* Couleur du texte */
+  border-radius: 0px; /* Coins s'arrondissent si on augmente radius */
+  transition: background 0.3s;  /* Animation douce au survol */
+}
+.filter-button3 {
+  margin: 0px;
+width : 100%;
+  padding: 8px 16px;
+  background: #fce94d; /* Fond jaune par défaut */
+  border: none;
+  border-right: none ;
+
+  cursor: pointer;
+  font-family: 'Lato', cursive; /* choix de la police */
+  font-size: 14px; /* Taille de la police */
+font-style : italic;
+text-transform: uppercase;
+  color: black; /* Couleur du texte */
+  border-radius: 0px; /* Coins s'arrondissent si on augmente radius */
+  transition: background 0.3s;  /* Animation douce au survol */
+}
+
+/* Style de la légende dans Fancybox */
+.fancybox-caption {
+  background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+  color: white; /* Texte blanc */
+  padding: 15px;
+  font-family: 'Lato', cursive; /* Police personnalisée */
+  font-size: 14px;
+  text-align: left; /* Alignement du texte */
+}
+
+
+.fancybox-caption a {
+  color: #f07bbf; /* Lien en rose */
+  text-decoration: underline;
+}
+
+.fancybox-custom-caption {
+  display: flex; /* Affichage en colonnes */
+  width: 100%;
+}
+
+.fancybox-custom-caption .caption-image {
+  flex: 1; /* Prend 50% de l'espace */
+  padding-right: 10px;
+}
+
+.fancybox-custom-caption .caption-text {
+  flex: 1; /* Prend 50% de l'espace */
+  color: white;
+  padding-left: 10px;
+}
+
+.fancybox-custom-caption h3 {
+  margin-top: 0;
+  color: #f07bbf;
+}
+
+.fancybox-custom-caption a {
+  color: #f07bbf;
+  text-decoration: underline;
+}
+
+/* Style des éléments de la grille */
+.item {
+  width: 90%; /* Largeur pour les très petits écrans */
+  margin: 0 auto 20px; /* Centre les éléments et ajoute une marge en bas */
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Pour les écrans de 768px à 1200px */
+@media (min-width: 576px) {
+  .item {
+    width: 44%; /* Largeur pour 2 colonnes */
+    margin: 0 2.5% 20px 0; /* Marge à droite et en bas */
+  }
+}
+
+/* Pour les écrans de 1200px à 1600px */
+@media (min-width: 850px) {
+  .item {
+    width: 29.5%; /* Largeur pour 3 colonnes */
+    margin: 0 1.8% 20px 0; /* Marge à droite et en bas */
+  }
+}
+
+/* Pour les écrans de 1600px et plus */
+@media (min-width: 1080px) {
+  .item {
+    width: 22%; /* Largeur pour 4 colonnes */
+    margin: 0 1.8% 20px 0; /* Marge à droite et en bas */
+  }
+}
+
+/* Style des images */
+.item img {
+  width: 100%;
+  height: auto; /* Garde le ratio de l'image */
+  display: block;
+}
+
+
+
+
+
+/* Style du menu de filtres */
+.filter-menu {
+    display: flex; /* Alignement horizontal */
+  justify-content: center; /* Centre la barre */
+  padding: 0px 0; /* Espace vertical uniquement */
+  background: #fce94d;
+border-right: none ;
+border-left : solid; 
+border-top : solid ;
+border-bottom : solid ;
+}
+
+@media (max-width: 576px) {
+  .filter-menu {
+    flex-direction: column;
+    border-bottom : none;
+  }
+}
+
+
+.filter-menu2 {
+    display: flex; /* Alignement horizontal */
+    margin: -8.5px 8px;
+  justify-content: center; /* Centre la barre */
+  padding: 0px 0; /* Espace vertical uniquement */
+  background: #fce94d;
+border-right: solid ;
+border-left : solid; 
+border-top : solid ;
+border-bottom : solid ;
+
+  ;
+}
+
+@media (max-width: 576px) {
+  .filter-menu2 {
+    flex-direction: column;
+  }
+}
+
+
+
+.filter-button.active {
+  background: #f07bbf;
+}
+/* Style du header */
+.header {
+  display: flex;
+  justify-content: space-between; /* Aligne les éléments aux extrémités */
+  align-items: center; /* Centre verticalement */
+  padding: 15px 20px;
+  background: white;
+}
+
+/* Style pour "Prénom NOM" */
+.name-title {
+  font-family: 'DM Sans', cursive;
+  font-size: inherit;
+  font-weight: bold;
+text-transform: none; /* mettre uppercase si on veut */
+  text-decoration: none;
+  color: inherit;
+}
+
+.name-title .prenom {
+  color: #9b7ad1;
+  font-size: 14px;
+}
+
+.name-title .nom {
+  color: #ef7cc1;
+font-size: 26px;
+}
+
+
+.name-title::first-letter {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ef7cc1;
+}
+
+/* Style pour les liens à droite */
+.nav-links {
+  display: flex;
+text-transform: uppercase;
+  gap: 20px; /* Espace entre les liens */
+}
+
+.nav-links a {
+  font-family: 'Lato', cursive;
+  font-size: 12px;
+  color: #251c4b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a, a:link, a:active {
+  color: inherit;
+  text-decoration: none;
+ }
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Style personnalisé pour les légendes Fancybox */
+.fancybox-caption__body {
+  font-family: 'Lato', cursive !important;
+  font-size: 14px !important;
+  color: white !important;
+  line-height: 1.4;
+  background: rgba(0, 0, 0, 0.8) !important;
+  padding: 15px !important;
+}
+
+.fancybox-caption a {
+  color: #f07bbf !important;
+  text-decoration: underline !important;
+}
+
+/* Galerie d'images en 3 colonnes */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+/* Image en pleine largeur */
+.project-gallery img.full-width {
+  grid-column: 1 / -1; /* Prend toute la largeur */
+  width: 100%;
+}
+
+/* Images normales */
+.project-gallery img:not(.full-width) {
+  width: 100%;
+  border-radius: 4px;
+}
+
+
+.project-gallery-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+  text-align: left;
+}
+
+.project-gallery-two img {
+  width: 100%;
+  border-radius: 4px;
+}

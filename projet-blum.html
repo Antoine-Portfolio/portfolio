@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Par projets - Antoine MONTALBETTI</title>
+  <!-- Polices -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9+Charted&family=Playwrite+DE+Grund&family=DM+Sans&family=Lato&display=swap" rel="stylesheet">
+  <!-- Fancybox CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <style>
+    /* Style du header */
+   .header {
+  display: flex;
+  justify-content: space-between; /* Aligne les éléments aux extrémités */
+  align-items: center; /* Centre verticalement */
+  padding: 15px 20px;
+  background: white;
+  margin : 4px 8px;
+}
+.nav-links {
+  display: flex;
+  margin: -2px 0px 0px 0px;
+}
+    /* Conteneur principal pour le contenu (sauf le header) */
+    .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: 'Playwrite DE Grund', cursive;
+      color: #2b2e4d;
+    }
+    /* Contenu de la page */
+    body {
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    /* Style pour "Prénom NOM" */
+    .name-title {
+      font-family: 'DM Sans', sans-serif;
+      text-decoration: none;
+      color: inherit;
+    }
+    .name-title .prenom { color: #9b7ad1; font-size: 18px; }
+    .name-title .nom { color: #ef7cc1; font-size: 30px; }
+    /* Titre de la page */
+    .page-title {
+      display: inline-block;
+      background: #f07bbf;
+      border: 1px solid #ddd;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-size: 14px;
+      color: white;
+      line-height: 1.4;
+      padding: 15px;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+    /* Catégories */
+    .category {
+      margin-bottom: 40px;
+    }
+    .category-title {
+      display: inline-block;
+      background: #fce94d;
+      border: 1px solid #ddd;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-size: 14px;
+      color: #2b2e4d;
+      line-height: 1.4;
+      padding: 15px;
+      text-transform: uppercase;
+      margin-bottom: -15px;
+    }
+ 
+    /* Lien de retour */
+    .back-link {
+      display: inline-block;
+      margin: 40px 0;
+      color: #78bdc2;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Header en dehors du conteneur -->
+  <header class="header">
+    <a href="index.html" class="name-title">
+      <span class="prenom">Antoine</span> <span class="nom">MONTALBETTI</span>
+    </a>
+    <nav class="nav-links">
+      <a href="sommaire.html">Projets détaillés</a>
+      <a href="info.html">Info</a>
+    </nav>
+  </header>
+  <!-- Menu de filtres -->
+  <div class="filter-menu2">
+    <button class="filter-button2" data-filter=".home"><a href="sommaire.html">Projets détaillés</a></button>
+  </div>
+
+  <!-- Conteneur pour le reste du contenu -->
+  <div class="main-container">
+    <div class="category">
+      <h2 class="category-title">Illustration - Blum</h2>
+    </div>
+    <!-- Description -->
+    <span style="text-decoration: underline;"> Client</span> : <strong>Brasserie Blum </strong> <br />
+    <span style="text-decoration: underline;"> Année </span> : <strong>2022 </strong> <br />
+
+    <p><strong>Le Blum </strong> est une brasserie à Marseille. J'ai réalisé les illustrations pour leurs affiches événementielles (graphisme : <strong>Stéphane=Damien</strong>). Ces dessins ont aussi été utilisés pour des cartes postales, divers posters dans le lieu, et des t-shirts imprimés pour le staff.
+    </p>
+    <!-- Galerie d'images -->
+    <div class="project-gallery">
+      <a data-fancybox="gallery" href="images/blum/Affiche_Blum.jpg">
+        <img src="images/blum/Affiche_Blum.jpg" alt="Lise 1">
+      </a>
+      <a data-fancybox="gallery" href="images/blum/Affiche_Blum-02.jpg">
+        <img src="images/blum/Affiche_Blum-02.jpg" alt="Amara 1">
+      </a>
+            <a data-fancybox="gallery" href="images/blum/Affiche_Blum-05.jpg">
+        <img src="images/blum/Affiche_Blum-05.jpg" alt="Angel 1">
+      </a>
+
+      <a data-fancybox="gallery" href="images/blum/blum-presentation-1.jpg">
+        <img src="images/blum/blum-presentation-1.jpg" alt="Angel 1">
+      </a>
+            <a data-fancybox="gallery" href="images/blum/blum-presentation-2.jpg">
+        <img src="images/blum/blum-presentation-2.jpg" alt="Lise 1">
+      </a>
+      <a data-fancybox="gallery" href="images/blum/blum-presentation-3.jpg">
+        <img src="images/blum/blum-presentation-3.jpg" alt="Amara 1">
+      </a>
+
+    </div>
+    <!-- Lien de retour -->
+    <a href="sommaire.html" style="color: #78bdc2">← Retour aux projets</a><br />
+    <a href="index.html" style="color: #78bdc2">← Retour à la galerie</a>
+  </div>
+  <!-- Fancybox JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</body>
+</html>

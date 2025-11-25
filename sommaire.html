@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Par projets - Antoine MONTALBETTI</title>
+  <!-- Polices -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9+Charted&family=Playwrite+DE+Grund&family=DM+Sans&family=Lato&display=swap" rel="stylesheet">
+  <style>
+    /* Style du header */
+   .header {
+  display: flex;
+  justify-content: space-between; /* Aligne les éléments aux extrémités */
+  align-items: center; /* Centre verticalement */
+  padding: 15px 20px;
+  background: white;
+  margin : 4px 8px;
+}
+
+.nav-links {
+  display: flex;
+  margin: -2px 0px 0px 0px;
+}
+
+    /* Conteneur principal pour le contenu (sauf le header) */
+    .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Contenu de la page */
+    body {
+      font-family: 'Playwrite DE Grund', cursive;
+      line-height: 1.6;
+      color: #2b2e4d;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style pour "Prénom NOM" */
+    .name-title {
+      font-family: 'DM Sans', sans-serif;
+      text-decoration: none;
+      color: inherit;
+    }
+    .name-title .prenom { color: #9b7ad1; font-size: 18px; }
+    .name-title .nom { color: #ef7cc1; font-size: 30px; }
+
+
+    /* Titre de la page */
+    .page-title {
+      display: inline-block;
+      background: #f07bbf;
+      border: 1px solid #ddd;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-size: 14px;
+      color: white;
+      line-height: 1.4;
+      padding: 15px;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    /* Catégories */
+    .category {
+      margin-bottom: 40px;
+    }
+    .category-title {
+      display: inline-block;
+      background: #fce94d;
+      border: 1px solid #ddd;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-size: 14px;
+      color: #2b2e4d;
+      line-height: 1.4;
+      padding: 15px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    /* Liste des projets */
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .project-item {
+      border: 1px solid #eee;
+      border-radius: 4px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .project-item:hover {
+      transform: translateY(-5px);
+    }
+    .project-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .project-item .project-info {
+      padding: 15px;
+      background: white;
+    }
+    .project-item h3 {
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      color: #2b2e4d;
+      margin: 0 0 10px 0;
+      text-transform: uppercase;
+    }
+    .project-item a {
+      color: #78bdc2;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: 'Playwrite DE Grund', cursive;
+    }
+    .project-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* Lien de retour */
+    .back-link {
+      display: inline-block;
+      margin: 40px 0;
+      color: #78bdc2;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header en dehors du conteneur -->
+  <header class="header">
+    <a href="index.html" class="name-title">
+      <span class="prenom">Antoine</span> <span class="nom">MONTALBETTI</span>
+    </a>
+    <nav class="nav-links">
+      <a href="sommaire.html">Projets détaillés</a>
+      <a href="info.html">Info</a>
+    </nav>
+
+  </header>
+
+  <!-- Menu de filtres -->
+<div class="filter-menu2">
+  <button class="filter-button2" data-filter=".home">Projets Détaillés</button>
+</div>
+
+
+  <!-- Conteneur pour le reste du contenu -->
+  <div class="main-container">
+
+  <!-- Catégorie Animation -->
+  <div class="category">
+    <h2 class="category-title">Animation</h2>
+    <div class="project-list">
+      <div class="project-item">
+        <img src="images/preview_loops.jpg" alt="Bande-Démo">
+        <div class="project-info">
+          <h3>Loops</h3>
+          <a href="projet-loops.html"style="color: #78bdc2">Voir le projet →</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="images/ramina/Ramina-H.jpg" alt="Ramina">
+        <div class="project-info">
+          <h3>Ramina</h3>
+          <a href="projet-ramina.html"style="color: #78bdc2">Voir le projet →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Catégorie Illustration -->
+  <div class="category">
+    <h2 class="category-title">Illustration</h2>
+    <div class="project-list">
+      <div class="project-item">
+        <img src="images/blum/Affiche_Blum-preview.jpg" alt="Blum">
+        <div class="project-info">
+          <h3>Blum</h3>
+          <a href="projet-blum.html"style="color: #78bdc2">Voir le projet →</a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="images/secours/_Secours_Catholique-Hamza_1b.jpg" alt="Secours Catholique">
+        <div class="project-info">
+          <h3>Secours Catholique</h3>
+          <a href="projet-secours_catholique.html"style="color: #78bdc2">Voir le projet →</a>
+        </div>
+      </div>
+            <div class="project-item">
+        <img src="images/plon/plon-preview5.jpg" alt="Plon">
+        <div class="project-info">
+          <h3>Plon</h3>
+          <a href="projet-plon.html"style="color: #78bdc2">Voir le projet →</a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="images/bastille/été2024.jpeg" alt="Magazine Bastille">
+        <div class="project-info">
+          <h3>Magazine Bastille</h3>
+          <a href="projet-bastille.html"style="color: #78bdc2">Voir le projet →</a>
+        </div>
+      </div>
+
+              <div class="project-item">
+        <img src="images/chapelet/lapoussiniere.hotglue.jpg" alt="Chapelet">
+        <div class="project-info">
+          <h3>Chapelet</h3>
+          <a href="projet-chapelet.html"style="color: #78bdc2">Voir le projet →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- Catégorie Bande dessinée -->
+  <div class="category">
+    <h2 class="category-title">Bande dessinée</h2>
+    <div class="project-list">
+      <div class="project-item">
+        <img src="images/stop_croisiere/stop_croisiere-couv-preview.jpg" alt="Stop Croisière">
+        <div class="project-info">
+          <h3>Stop Croisière</h3>
+          <a href="projet-stop_croisiere.html"style="color: #78bdc2">Voir le projet →</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="images/nivelles/nivelles-preview.jpg" alt="Nivelles">
+        <div class="project-info">
+          <h3>Nivelles</h3>
+          <a href="projet-nivelles.html"style="color: #78bdc2">Voir le projet →</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="images/premier_contact.jpeg" alt="Premier contact">
+        <div class="project-info">
+          <h3>Premier contact</h3>
+          <a href="projet-premier_contact.html"style="color: #78bdc2">Voir le projet →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Lien de retour -->
+  <a href="index.html" style="color: #78bdc2">← Retour à la galerie</a>
+</body>
+</html>
+<link rel="stylesheet" href="styles.css">
