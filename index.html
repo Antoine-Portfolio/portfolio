@@ -28,23 +28,38 @@
 </head>
 <body>
 <!-- Header avec nom et liens -->
-<header class="header">
-  <a href="index.html" class="name-title">
-    <span class="prenom">Antoine</span> <span class="nom">MONTALBETTI</span>
-  </a>
-  <nav class="nav-links">
-    <a href="sommaire.html">Projets détaillés</a>
-    <a href="info.html">Info</a>
-  </nav>
-</header>
-
-<!-- Menu de filtres -->
-<div class="filter-menu">
-  <button class="filter-button active" data-filter=".home">Accueil</button>
-  <button class="filter-button" data-filter=".illustration">Illustration</button>
-  <button class="filter-button" data-filter=".animation">Animation</button>
-  <button class="filter-button" data-filter=".bd">Bande Dessinée</button>
-  <button class="filter-button" data-filter=".carnet">Carnet</button>
+<div class="banner">
+  <div class="banner-row">
+    <div class="banner-cell cell-40" style="background-color: #f99ad2;">
+      <a href="index.html">Antoine Montalbetti</a>
+    </div>
+    <div class="banner-cell cell-20" style="background-color: #67b492;">
+      <a href="index.html">Vue Mosaïque</a>
+    </div>
+    <div class="banner-cell cell-20" style="background-color: #c2cc97;">
+      <a href="sommaire.html">Vue Projets</a>
+    </div>
+    <div class="banner-cell cell-20" style="background-color: #f2ca82;">
+      <a href="info.html">Info</a>
+    </div>
+  </div>
+  <div class="banner-row">
+    <div class="banner-cell filter-cell-B" data-filter=".home">
+      <a>Tous</a>
+    </div>
+    <div class="banner-cell filter-cell" data-filter=".illustration">
+      <a>Illustration</a>
+    </div>
+    <div class="banner-cell filter-cell" data-filter=".animation">
+      <a>Animation</a>
+    </div>
+    <div class="banner-cell filter-cell" data-filter=".bd">
+      <a>Bande Dessinée</a>
+    </div>
+    <div class="banner-cell filter-cell" data-filter=".carnet">
+      <a>Carnet</a>
+    </div>
+  </div>
 </div>
 
   <!-- Grille des images -->
@@ -152,19 +167,19 @@
   </div>
 
 <div class="item animation ">
-      <a data-fancybox="gallery" href="images/floating.gif" data-caption="<p>Petit loop animé réalisé pour le </p><a href='projet-loops.html'>Monday's Challenge</a>">
-        <img src="images/floating.gif" alt="vidéo skater">
+      <a data-fancybox="gallery" href="images/floating.gif" data-caption="<p>Loop animé réalisé pour le </p><a href='projet-loops.html'>Monday's Challenge</a>">
+        <img src="images/floating.gif" alt="loop floating">
       </a>
     </div>
 
 <div class="item animation home">
-      <a data-fancybox="gallery" href="images/video_skater.gif" data-caption="<p>Petit loop animé réalisé pour un projet personnel</p><a href='projet-loops.html'>Voir avec le son</a>">
-        <img src="images/video_skater.gif" alt="vidéo skater">
+      <a data-fancybox="gallery" href="images/video_skater.gif" data-caption="<p>Loop animé réalisé pour un projet personnel</p><a href='projet-loops.html'>Voir avec le son</a>">
+        <img src="images/video_skater.gif" alt="loop skater">
       </a>
     </div>
 
 <div class="item animation">
-      <a data-fancybox="gallery" href="images/infinite_fall-4.gif" data-caption="<p>Petit loop animé réalisé pour le </p><a href='projet-loops.html'>Monday's Challenge</a>">
+      <a data-fancybox="gallery" href="images/infinite_fall-4.gif" data-caption="<p>Loop animé réalisé pour le </p><a href='projet-loops.html'>Monday's Challenge</a>">
         <img src="images/infinite_fall-4.gif" alt="Infinite Fall">
       </a>
     </div>
@@ -511,7 +526,7 @@
     </div>
  <div class="item carnet">
       <a data-fancybox="gallery" href="images/carnet/OLD/Illustration sans titre(1).jpeg" data-caption="<p>Dessin personnel</p> ">
-        <img src="images/carnet/old/Illustration sans titre(1).jpeg" alt="Dessin personnel">
+        <img src="images/carnet/OLD/Illustration sans titre(1).jpeg" alt="Dessin personnel">
       </a>
     </div>
 <div class="item carnet">

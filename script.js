@@ -3,15 +3,37 @@ $(document).ready(function() {
   var $grid = $('.grid').isotope({
     itemSelector: '.item',
     layoutMode: 'masonry',
-    percentPosition: true, // Permet une meilleure adaptation
+    percentPosition: true,
   });
 
   // Filtrer par défaut sur "home"
   $grid.isotope({ filter: '.home' });
 
+
+  // Activer le bouton "Accueil" par défaut
+  $('.filter-cell-B[data-filter=".home"]').addClass('active');
+
   // Activer les filtres
-  $('.filter-button').on('click', function() {
-    $('.filter-button').removeClass('active');
+  $('.filter-cell').on('click', function() {
+    $('.filter-cell').removeClass('active');
+    $(this).addClass('active');
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
+
+
+  // Activer les filtres
+  $('.filter-cell').on('click', function() {
+    $('.filter-cell-B').removeClass('active');
+    $(this).addClass('active');
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
+
+
+  // Activer les filtres
+  $('.filter-cell-B').on('click', function() {
+    $('.filter-cell').removeClass('active');
     $(this).addClass('active');
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });

@@ -1,88 +1,121 @@
+/* Style de la bannière */
+.banner {
+  width: 100%;
+  display: block; 
+  border-left: solid;
+}
+
+.banner-row {
+  display: flex;
+  width: 100%;
+}
+
+.banner-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  font-family: 'Lato', cursive;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+
+}
+
+.banner-cell a {
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.cell-40 {
+  width: 40%;
+border-right: solid ;
+border-left : solid; 
+border-left-color : #f99ad2; 
+border-top : solid ;
+border-bottom : none ;
+
+}
+
+
+.cell-100 {
+  width: 100%;
+border-right: solid ;
+border-top : solid ;
+border-bottom : solid ;
+
+}
+
+.cell-20 {
+  width: 20%;
+  border-right: solid ;
+border-left : none; 
+border-top : solid ;
+border-bottom : none ;
+
+}
+
+
+.banner-cell:hover a{
+  color: white;
+}
+
+.filter-cell:hover a{
+  color: white;
+}
+
+.filter-cell {
+  width: 20%;
+  background-color: #8cb5ed;
+  border-right: solid ;
+border-left : none; 
+border-top : solid ;
+border-bottom : solid;
+}
+
+.filter-cell.active {
+  background-color: #9587dc;
+}
+
+.filter-cell:hover a{
+  color: white;
+}
+
+.filter-cell-B {
+  width: 20%;
+  background-color: #8cb5ed;
+  border-right: solid ;
+border-left : none; 
+border-top : solid ;
+border-bottom : solid;
+}
+
+.filter-cell-B.active {
+  background-color: #9587dc;
+}
+
+.filter-cell:hover a{
+  color: white;
+}
+
+
 /* Style du conteneur de la grille (Isotope gère la disposition) */
 .grid {
   padding: 20px;
   visibility: hidden; /* Cache la grille jusqu'à ce qu'Isotope soit prêt */
 }
 
+a:visited {  
+  color: inherit;  
+  background-color: inherit;  
+}  
 
-
-/* Style des boutons de filtres */
-.filter-button {
-  margin: 0px;
-width : 100%;
-  padding: 8px 16px;
-  background: #fce94d; /* Fond jaune par défaut */
-  border: none;
-  border-right: solid ;
-  cursor: pointer;
-  font-family: 'Lato', cursive; /* choix de la police */
-  font-size: 14px; /* Taille de la police */
-font-style : italic;
-text-transform: uppercase;
-  color: #2b2e4d; /* Couleur du texte */
-  border-radius: 0px; /* Coins s'arrondissent si on augmente radius */
-  transition: background 0.3s;  /* Animation douce au survol */
-}
-@media (max-width: 576px) {
-  .filter-button {
-      margin: 0px;
-width : 100%;
-  padding: 8px 16px;
-  background: #fce94d; /* Fond jaune par défaut */
-  border: none;
-  border-right: solid ;
-  cursor: pointer;
-  font-family: 'Lato', cursive; /* choix de la police */
-  font-size: 14px; /* Taille de la police */
-font-style : italic;
-text-transform: uppercase;
-  color: #2b2e4d; /* Couleur du texte */
-  border-radius: 0px; /* Coins s'arrondissent si on augmente radius */
-  transition: background 0.3s;  /* Animation douce au survol */
-
-    border-bottom: solid;
-  }}
-
-  
-
-
-.filter-button:hover {
-  background: #f0e09d; /* Jaune légèrement plus foncé au survol */
-}
-.filter-button2 {
-  margin: 0px;
-width : 100%;
-  padding: 8px 16px;
-  background: #f07bbf; /* Fond rose par défaut */
-  border: none;
-  border-right: none ;
-
-  cursor: pointer;
-  font-family: 'Lato', cursive; /* choix de la police */
-  font-size: 14px; /* Taille de la police */
-font-style : italic;
-text-transform: uppercase;
-  color: white; /* Couleur du texte */
-  border-radius: 0px; /* Coins s'arrondissent si on augmente radius */
-  transition: background 0.3s;  /* Animation douce au survol */
-}
-.filter-button3 {
-  margin: 0px;
-width : 100%;
-  padding: 8px 16px;
-  background: #fce94d; /* Fond jaune par défaut */
-  border: none;
-  border-right: none ;
-
-  cursor: pointer;
-  font-family: 'Lato', cursive; /* choix de la police */
-  font-size: 14px; /* Taille de la police */
-font-style : italic;
-text-transform: uppercase;
-  color: black; /* Couleur du texte */
-  border-radius: 0px; /* Coins s'arrondissent si on augmente radius */
-  transition: background 0.3s;  /* Animation douce au survol */
-}
 
 /* Style de la légende dans Fancybox */
 .fancybox-caption {
@@ -212,10 +245,6 @@ border-bottom : solid ;
 }
 
 
-
-.filter-button.active {
-  background: #f07bbf;
-}
 /* Style du header */
 .header {
   display: flex;
@@ -271,10 +300,6 @@ a, a:link, a:active {
   color: inherit;
   text-decoration: none;
  }
-a:hover {
-  color: black;
-  text-decoration: underline;
-}
 
 .nav-links a:hover {
   text-decoration: underline;
