@@ -39,6 +39,41 @@ $(document).ready(function() {
     $grid.isotope({ filter: filterValue });
   });
 
+
+  // Activer les filtres
+  $('.filter-cell').on('click', function() {
+    $('.filter-cell-C').removeClass('active');
+    $(this).addClass('active');
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
+
+  // Activer les filtres
+  $('.filter-cell-B').on('click', function() {
+    $('.filter-cell-C').removeClass('active');
+    $(this).addClass('active');
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
+ // Activer les filtres
+  $('.filter-cell-C').on('click', function() {
+    $('.filter-cell-B').removeClass('active');
+    $(this).addClass('active');
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
+
+
+  // Activer les filtres
+  $('.filter-cell-C').on('click', function() {
+    $('.filter-cell').removeClass('active');
+    $(this).addClass('active');
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
+
+
+
   // Rendre la grille visible une fois les images chargées
   $grid.imagesLoaded().progress(function() {
     $grid.isotope('layout');
