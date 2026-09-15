@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9+Charted&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
+   
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antoine Montalbetti</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Fancybox CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <!-- Isotope CSS (optionnel) -->
+  <style>
+
+    /* Style de base pour Isotope */
+    .grid { visibility: hidden; } /* Cache la grille jusqu'à ce qu'Isotope soit chargé */
+
+        .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .description {
+      font-family: 'Lato', sans-serif;
+      color: #2b2e4d;
+    }
+
+    .recherches {
+      font-family: 'Lato', sans-serif;
+      color: #2b2e4d;
+      text-align: center;
+
+    }
+
+    /* Catégories */
+    .category {
+      margin-bottom: 40px;
+    }
+    .category-title {
+      display: inline-block;
+      background: #f2ca82;
+      border:  solid ;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-size: 14px;
+      color: #2b2e4d;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+    }
+
+    .category-title-2 {
+      display: inline-block;
+      background: #9587dc;
+      border:  solid ;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-size: 14px;
+      color: #2b2e4d;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+    }
+
+    .category-title-4 {
+      display: inline-block;
+      background: #8cb5ed;
+      border:  solid ;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-size: 14px;
+      color: #2b2e4d;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+      margin-top: 40px;
+
+    }
+
+    .category-title-3 {
+      display: inline-block;
+      background: #f99ad2;
+      border:  solid ;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-size: 14px;
+      color: #2b2e4d;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+    }
+
+    /* Liste des projets */
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .project-item {
+      border: solid ;
+      overflow: hidden;
+      transition: transform 0.3s;
+      background: #8cb5ed;
+      filter: saturate(95%);
+
+
+    }
+    .project-item:hover {
+      transform: translateY(-5px);
+     filter: saturate(105%);
+     }
+    .project-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: solid ;
+    }
+    .project-item .project-info {
+      text-align: center;
+      padding: 0px;
+
+    }
+    .project-item h3 {
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      color: #2b2e4d;
+      margin: 5px 0px 10px 0px;
+      text-transform: uppercase;
+    }
+    .project-item a {
+      color: #78bdc2;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: 'Lato', sans-serif;
+    }
+    .project-item a:hover {
+      text-decoration: underline;
+    }
+
+        /* Style pour la vidéo */
+    .video-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .video-container video {
+      max-width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+  </style>
+</head>
+<body>
+  <div class="banner">
+  <div class="banner-row">
+    <div class="banner-cell cell-40" style="background-color: #f99ad2;">
+      <a href="index.html">Antoine Montalbetti</a>
+    </div>
+    <div class="banner-cell cell-20 " style="background-color: #c2cc97;">
+      <a href="index.html">Vue Galerie</a>
+    </div>
+    <div class="banner-cell cell-20" style="background-color: #67b492;">
+      <a href="sommaire.html">Vue Projets</a>
+    </div>
+    <div class="banner-cell cell-20" style="background-color: #f2ca82;">
+      <a href="info.html">Info</a>
+    </div>
+  </div>
+  <div class="banner-row">
+
+    <div class="banner-cell cell-100" style="background-color: #8cb5ed;">
+      <a href="sommaire.html">Retour Sommaire</a>
+    </div>
+  </div>
+</div>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Conteneur pour le reste du contenu -->
+  <div class="main-container">
+    <div class="category">
+      <h2 class="category-title"><a href="sommaire.html#section-1">Animation</a> </h2>
+      <h2 class="category-title-2">- Orange</h2>
+
+    </div>
+
+
+    <!-- Description -->
+        <div class="description">
+
+    <span style="text-decoration: underline;"> Client</span> : <strong>Format </strong> <br />
+    <span style="text-decoration: underline;"> Année </span> : <strong>2026 </strong> <br />
+<p> J'ai réalisé une vidéo d'une minute pour <strong>Orange</strong> dans le cadre de leur lutte contre le cyber harcèlement. <br />
+<br />
+
+La vidéo était une commande de l'agence <a href="https://www.agenceformat.com/" style="color: #78bdc2" target="_blank"><strong>Format </strong></a> pour les réseaux sociaux d'Orange. Il s'agissait d'illustrer le témoignage d'une femme albinos sur le cyber-harcèlement. <br /><br />
+D'habitude je travaille avec seulement deux ou trois couleurs, mais pour m'adapter au sujet j'ai choisi d'élargir ma palette. J'ai bien aimé faire ce travail d'ambiances colorées, en essayant de relever plusieurs défis : représenter l'albinisme de façon chaleureuse, évoquer les couleurs d'Orange, et raconter les émotions intérieures du personnage par la couleur.<br />
+Le timing étant assez serré, j'ai eu l'idée de garder le côté "wip" de peintures numériques, pour qu'on soit un peu comme dans le carnet de l'héroïne. <br />
+
+</p>
+
+  <!-- Conteneur pour la vidéo -->
+  <div class="video-container">
+<iframe width="400" height="800" src="https://youtube.com/shorts/52bBwun-ZSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+
+<div class="recherches">
+     <span style="text-decoration: underline;display: center;"> Storyboard</span>
+    </div>
+  <div class="main-container">
+    <div class="project-gallery">    
+            <img src="images/orange/sb1.jpg" alt="Orange storyboard 1" class="full-width"> <!-- 4e image en pleine largeur -->
+
+</div>
+  <div class="main-container">
+    <div class="project-gallery">    
+            <img src="images/orange/sb2.jpg" alt="Orange storyboard 2" class="full-width"> <!-- 4e image en pleine largeur -->
+
+</div>
+  <div class="main-container">
+    <div class="project-gallery">    
+            <img src="images/orange/sb3.jpg" alt="Orange storyboard 3" class="full-width"> <!-- 4e image en pleine largeur -->
+
+</div>
+
+<div class="recherches">
+     <span style="text-decoration: underline;display: center;"> Color Script </span>
+    </div>
+  <div class="main-container">
+ <!-- Galerie d'images -->
+<div style="text-align: center;">
+            <img src="images/orange/COLOR SCRIPT.jpg" alt="Description" style="max-width: 376px; max-height: 800px; width: auto; height: auto;">
+        </div>
+    </div>
+<br />
+<div class="recherches">
+     <span style="text-decoration: underline;display: center;"> Illustrations</span>
+    </div>
+
+  <div class="main-container">
+ <!-- Galerie d'images -->
+<div style="text-align: center;">
+            <img src="images/orange/ILLU-11-b.jpg" alt="Description" style="max-width: 600px; max-height: 800px; width: auto; height: auto;">
+        </div>
+    </div>
+
+<div class="main-container">
+    <!-- Galerie d'images -->
+    <div class="project-gallery-two" style="text-align: center; display: flex; justify-content: center; align-items: center; gap: 10px;">
+
+        <a data-fancybox="gallery" href="images/orange/illu-4.gif">
+            <img src="images/orange/illu-4.gif" alt="orange wip 1" style="max-height: 600px; ">
+        </a>
+
+        <a data-fancybox="gallery" href="images/orange/illu-14b.gif">
+            <img src="images/orange/illu-14b.gif" alt="orange wip 2" style="max-height: 600px; ">
+        </a>
+
+    </div>
+</div>  
+
+
+
+        <!-- Lien de retour -->
+        <div class="category-2">
+        <h2 class="category-title-4">  <a href="sommaire.html" >← Retour aux projets </a> </h2>
+        </div>
+    
+        <div class="category-2">
+        <h2 class="category-title-3">  <a href="index.html" >← Retour à la galerie</a> </h2>
+        </div>
+  <!-- Fancybox JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</body>
+</html>
